@@ -83,5 +83,6 @@ button:is(:hover,:focus){
     main {
         grid-template-columns: 1fr;
         max-width: 90%;
+        margin-block: 2rem;
     }
 }
