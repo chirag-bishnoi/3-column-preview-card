@@ -19,9 +19,10 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: min( 1000px, 95%);
+    max-width: 1000px;
     color: hsla(0, 0%, 100%, 0.75);
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .sec-1{
@@ -35,12 +36,13 @@ main {
 }
 
 article {
-    padding: 2.4rem;
+    padding-inline: 20%;
+    padding-block: 4rem;
 }
 
 h2 {
     color: hsl(0, 0%, 95%);
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-family:"Big Shoulders Display", Arial, Helvetica, sans-serif;
     font-weight: 700;
     margin-block: 1.3rem;
@@ -49,6 +51,7 @@ h2 {
 
 p {
     margin-bottom: 5rem;
+    line-height: 1.5;
 }
 
 button {
@@ -58,6 +61,7 @@ button {
     padding: .7rem 1.1rem;
     border-radius: 50px;
     font-family: inherit;
+    cursor: pointer;
 }
 
 button:is(:hover,:focus){
@@ -85,5 +89,9 @@ button:is(:hover,:focus){
         grid-template-columns: 1fr;
         max-width: 90%;
         margin-block: 2rem;
+    }
+
+    article {
+        padding-inline: 15% 20%;
     }
 }
